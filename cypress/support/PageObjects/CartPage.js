@@ -1,4 +1,4 @@
-import ConfirmationPage from '../../support/pageObjects/ConfirmationPage'
+import ConfirmationPage from './ConfirmationPage'
 class CartPage {
     checkoutItems() {
         cy.contains('button', 'Checkout').click()

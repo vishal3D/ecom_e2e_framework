@@ -1,4 +1,5 @@
-import ProductPage from '../../support/pageObjects/ProductPage'
+import ProductPage from './ProductPage'
+
 class HomePage {
     goTo(url) {
         cy.visit(url)

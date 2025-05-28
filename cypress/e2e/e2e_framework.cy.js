@@ -1,4 +1,4 @@
-import HomePage from '../../support/pageObjects/HomePage'
+import HomePage from '../support/PageObjects/HomePage';
 
 describe('End to End ecommerce Test', function () {
     before(function () {

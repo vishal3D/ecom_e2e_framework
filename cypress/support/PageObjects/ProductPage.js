@@ -1,4 +1,4 @@
-import CartPage from '../support/pageObjects/CartPage'
+import CartPage from './CartPage'
 
 class ProductPage {
     pageValidation() {
