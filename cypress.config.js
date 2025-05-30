@@ -2,8 +2,11 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   defaultCommandTimeout: 6000,
-  watchForFileChanges :false,
+  watchForFileChanges: false,
   reporter: 'cypress-mochawesome-reporter',
+  reporterOptions: {
+    charts: true,
+  },
   env: {
     url: "https://rahulshettyacademy.com",
   },
