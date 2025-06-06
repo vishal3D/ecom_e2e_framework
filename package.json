@@ -1,5 +1,14 @@
 {
   "devDependencies": {
-    "cypress": "^14.4.0"
+    "cypress": "^14.4.0",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "scripts": {
+    "allTest": "npx cypress run",
+    "headTest": "npm run test --headed",
+    "chromeTest": "npm run test --browser chrome",
+    "recordDashBoardTest": "npx cypress run --record --key <add your key from cypress cloud dashboard>",
+    "SmokeTest" : "npx cypress run --spec \"cypress/e2e/e2e_framework.cy.js\""
+    
   }
 }

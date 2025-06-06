@@ -3,7 +3,7 @@ import HomePage from '../support/PageObjects/HomePage';
 describe('End to End ecommerce Test', function () {
     before(function () {
         //runs once before all tests in this block
-        cy.fixture('example').then(function (data) {
+        cy.fixture('loginData').then(function (data) {
             this.data = data
             this.homepage = new HomePage()
         })
@@ -11,7 +11,7 @@ describe('End to End ecommerce Test', function () {
     it('Submit Order', function () {
         const productName = this.data.productName
         this.homepage.goTo(Cypress.env('url') + "/loginpagePractise/")
-        cy.log(this.data.username)
+       // cy.log(this.data.username)
         const productPage = this.homepage.login(this.data.username, this.data.password)
         productPage.pageValidation()
         productPage.getCardCount().should('have.length', 4)
